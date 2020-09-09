@@ -1,0 +1,30 @@
+.wrapper {
+  padding: 50px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 158px;
+}
+
+.linksWrapper {
+  display: flex;
+  align-items: center;
+  a {
+    display: block;
+    font-weight: bolder;
+    font-size: 1.125em;
+    padding: 10px 15px;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+    background-color: transparent;
+  }
+  a + a {
+    margin-left: 1em;
+  }
+}

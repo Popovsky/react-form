@@ -1,0 +1,40 @@
+@import "./../../fonts.css";
+
+.wrapper {
+  position: relative;
+  margin: 7px 0;
+}
+
+.field {
+  font-family: 'Gotham Book', sans-serif;
+  width: 100%;
+  font-size: 16px;
+  padding: 21px 23px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: black;
+}
+
+.error {
+  border-color: red;
+}
+
+.valid {
+  border-color: green;
+}
+
+.errorMessage {
+  position: absolute;
+  z-index: 1000;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: rgba(255, 162, 162, 0.8);
+}
+
+.field::placeholder {
+  text-transform: capitalize;
+  color: #9CA8B7;
+}

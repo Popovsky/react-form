@@ -1,0 +1,49 @@
+@import "./../../fonts.css";
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width: 550px) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  & > label {
+    flex: auto;
+  }
+
+  & > label:nth-child(odd) {
+    margin-right: 28px;
+    @media screen and (max-width: 550px) {
+      margin-right: 0;
+    }
+  }
+}
+
+.section {
+  font-family: "Gotham Book", sans-serif;
+  display: flex;
+  flex: auto;
+  padding: 15px;
+  border: 1px solid white;
+  margin: 7px 0!important;
+
+  & > label {
+    min-width: 20px;
+    margin: 0 15px 0 0;
+  }
+}
+
+.textWrapper {
+  text-align: left;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 12px;
+  line-height: 16px;
+}
