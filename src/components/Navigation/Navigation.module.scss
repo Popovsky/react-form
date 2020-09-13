@@ -5,10 +5,15 @@
 .container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+   & > li {
+     margin: 15px 0;
+   }
 }
 
 .logo {
   width: 158px;
+  margin-right: 10px;
 }
 
 .linksWrapper {
